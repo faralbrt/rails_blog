@@ -16,7 +16,7 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
 
     @article.save
-    redirect "/articles/#{@article.id}"
+    redirect_to @article
   end
 
 
